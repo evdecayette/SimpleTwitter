@@ -33,7 +33,9 @@ public class TimelineActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
+
         client = TwitterApp.getRestClient(this);
+
 
         swipeContainer = findViewById(R.id.swipeContainer);
         // Configure the refreshing colors
